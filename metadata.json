@@ -1,0 +1,6 @@
+{
+  "name": "FocusForge — Build Discipline. Earn Your Focus.",
+  "description": "FocusForge — Build Discipline. Earn Your Focus. A high-performance Pomodoro sanctuary with real 30-day challenges, LeetCode-style achievements, streak tracking, continuous Spotify streaming, and ambient environments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

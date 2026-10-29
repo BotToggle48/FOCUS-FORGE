@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --theme-bg-main: #0B1020;
+  --theme-bg-sidebar: #090E18;
+  --theme-bg-card: #151D30;
+  --theme-bg-elevated: #1B263B;
+  --theme-accent-primary: #43E6C3;
+  --theme-accent-hover: #71F0D5;
+  --theme-accent-glow: rgba(67, 230, 195, 0.25);
+  --theme-text-primary: #E8EEF7;
+  --theme-text-secondary: #9AA9BD;
+  --theme-border: #29364B;
+  --theme-success: #43D9A3;
+  --theme-warning: #F5C26B;
+  --theme-error: #FF707D;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  }
+}
+
+.theme-root {
+  background-color: var(--theme-bg-main);
+  color: var(--theme-text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.theme-card {
+  background-color: var(--theme-bg-card);
+  border-color: var(--theme-border);
+  color: var(--theme-text-primary);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.theme-sidebar {
+  background-color: var(--theme-bg-sidebar);
+  border-color: var(--theme-border);
+  color: var(--theme-text-primary);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.theme-elevated {
+  background-color: var(--theme-bg-elevated);
+  border-color: var(--theme-border);
+  color: var(--theme-text-primary);
+}
+
+.font-timer {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 8 Distinct Timer Typography Styles */
+.font-timer-digital {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.font-timer-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+.font-timer-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.font-timer-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.font-timer-rounded {
+  font-family: 'Quicksand', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.font-timer-grotesk {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.05em;
+}
+
+.font-timer-thin {
+  font-family: 'Raleway', system-ui, sans-serif;
+  font-weight: 200;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+}
+
+.font-timer-bold {
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+/* Cinematic film grain & vignette effects */
+.bg-film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
